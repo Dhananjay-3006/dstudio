@@ -5,3 +5,8 @@
   font-family: "Poppins", sans-serif;
   color-scheme: dark;
 }
+
+.marquee{
+  transform:translateX(100%);
+  
+}

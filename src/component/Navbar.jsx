@@ -4,6 +4,7 @@ import { navItems } from "../constants";
 import { useState } from "react";
 
 
+
 const Navbar = () => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
@@ -15,9 +16,10 @@ const Navbar = () => {
    <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
         <div className="container px-4 mx-auto relative text-sm">
             <div className="flex justify-between item-center">
-                <div className="flex items-center flex-shrink-0">
-                    <img className='h-10 w-10 mr-2' src={logo} alt="logo" />
-                    <span className="text-xl tracking-tight">Virtual R</span>
+                <div className="flex flex-wrap items-center flex-shrink-0">
+                    <a href="index.html" className="flex items-center"><img className='h-10 w-10 mr-2' src={logo} alt="logo" />
+                    <span className="text-xl tracking-tight">DStudio</span>
+                    </a>
                 </div>
                 <ul className='hidden lg:flex ml-14 space-x-12 items-center'>
                     {navItems.map((item, index) => (
